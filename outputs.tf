@@ -1,7 +1,9 @@
 output "instance_id" {
-  value = aws_instance.example.id
+  description = "ec2 instance id"
+  value = aws_instance.web
 }
 
-output "instance_public_ip" {
-  value = aws_instance.example.public_ip
+output "publick_ip" {
+  description = "ec2 pubick ip"
+  value = aws_instance.web.public_ip
 }
