@@ -1,3 +1,3 @@
-ami_id = "*****"
-instance_name = "learning"
-instance_type = "t3.micro"
+aws_region = "us-south-1"
+instance_type = "t2.micro"
+key_name =  "myfirst_keypair"
