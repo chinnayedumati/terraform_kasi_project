@@ -1,24 +1,28 @@
-variable "region" {
-  description = "aws_region"
-  type = string
+variable "aws_region" {
   default = "ap-south-1"
+}
+
+variable "vpc_cidr" {
+  default = "10.0.0.0/16"
   
 }
 
-variable "ami_id" {
-  description = "ami-035827357e3c7e810"
-  type = string
+variable "publick_subnet_cidr" {
+  default = "10.0.1.0/24"
+  
+}
+
+variable "private_subnet_cidr" {
+  default = "10.0.2.0/24"
   
 }
 
 variable "instance_type" {
-  description = "ec2 instance type"
-  type = string
-  default = "t3.micro"
+  default = "t2.micro"
   
 }
-variable "instance_name" {
-  description = "instance_name"
-  type = string
+variable "key_name" {
+  description = "aws first key pair"
   
 }
+  
